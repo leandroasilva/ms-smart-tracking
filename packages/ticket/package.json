@@ -2,5 +2,8 @@
   "name": "@smart-tracking/ticket",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@smart-tracking/utils": "1.0.0"
+  }
 }

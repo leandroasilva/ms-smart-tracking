@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@smart-tracking/utils": "1.0.0",
-    "kafkajs": "^2.2.4"
+    "@smart-tracking/utils": "1.0.0"
   }
 }

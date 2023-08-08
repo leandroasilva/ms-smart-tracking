@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "kafkajs": "^2.2.4",
     "pg": "^8.11.2"
   }
 }
