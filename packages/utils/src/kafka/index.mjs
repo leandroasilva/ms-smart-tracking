@@ -8,24 +8,8 @@ class KafkaClient {
         });
     }
 
-    async connect() {
-        await this.kafka.connect();
-    }
-
-    async disconnect() {
-        await this.kafka.disconnect();
-    }
-
-    async send(topic, message) {
-        await this.kafka.send({ topic, messages: [message] });
-    }
-
-    async subscribe(topic) {
-        await this.kafka.subscribe({ topic });
-    }
-
-    async unsubscribe(topic) {
-        await this.kafka.unsubscribe({ topic });
+    consumer(groupId="default") {
+        return this.kafka.consumer({ groupId });
     }
 }
 
