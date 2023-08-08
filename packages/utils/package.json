@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "./src/main.mjs",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "pg": "^8.11.2"
+  }
 }
