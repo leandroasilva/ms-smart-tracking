@@ -7,4 +7,10 @@ Node 18.0.0
 Kafka
 Postgres
 
-Optei por usar javascript puro em um simples monorepo usando yarn workspaces
+Optei por usar javascript puro em um simples monorepo usando yarn workspaces, para executar o projeto faça os seguintes passos.:
+* clonar o repositório.
+* instalar os pacotes usando YARN INSTALL
+* rodar o dockercompose usando DOCKER COMPOSE UP
+* acessar o banco de dados usando usuario e senha padrao "postgres"
+* executar o SQL que está no repositório.
+* após, basta rodar o projeto usando YARN DEV com isso todos os microservicos vao dar um start automático.
