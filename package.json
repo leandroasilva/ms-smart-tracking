@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "npm-run-all -p dev:*",
     "dev:order": "yarn workspace @smart-tracking/order start",
+    "dev:core": "yarn workspace @smart-tracking/core start",
     "dev:ticket": "yarn workspace @smart-tracking/ticket start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
