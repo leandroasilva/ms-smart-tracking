@@ -11,6 +11,10 @@ class KafkaClient {
     consumer(groupId="default") {
         return this.kafka.consumer({ groupId });
     }
+
+    producer() {
+        return this.kafka.producer();
+    }
 }
 
 export default KafkaClient;

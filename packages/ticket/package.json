@@ -1,8 +1,13 @@
 {
   "name": "@smart-tracking/ticket",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/main.mjs",
   "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/main.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@smart-tracking/utils": "1.0.0"
   }
