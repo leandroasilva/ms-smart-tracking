@@ -19,6 +19,26 @@ class PgClient {
       idleTimeoutMillis: 30000,
       connectionTimeoutMillis: 2000,
     });
+
+    /**
+     * monitoring events logs pool
+     */
+    this.pool.on("error", (err) => {
+      console.error("Unexpected error on idle client", err);
+    })
+    this.pool.on("connect", () => {
+      console.log("Postgres connected");
+    })
+    this.pool.on("acquire", (client) => {
+      console.log("Postgres acquired a connection");
+    })
+    this.pool.on("remove", (client) => {
+      console.log("Postgres removed a connection");
+    })
+    this.pool.on("release", (client) => {
+      console.log("Postgres released a connection");
+    })
+
   }
 
   async connect() {

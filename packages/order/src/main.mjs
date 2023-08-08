@@ -1,13 +1,13 @@
 import { KafkaClient, PgClient } from "@smart-tracking/utils";
 import TrackingService from "./services/tracking.service.mjs";
 
+const pool = new PgClient();
 const kafka = new KafkaClient("ms-order-consumer");
+const consumer = kafka.consumer("default");
 
 (async () => {
-  const pool = new PgClient();
   const poolConnect = await pool.connect();
-
-  const consumer = kafka.consumer("default");
+  
   await consumer.connect();
   await consumer.subscribe({ topic: "tracking", fromBeginning: true });
   
