@@ -23,3 +23,9 @@ const kafka = new KafkaClient("ms-order-consumer");
     },
   });
 })();
+
+process.on("SIGINT", async () => {
+  await consumer.disconnect();
+  await pool.disconnect();
+  process.exit(0);
+})
