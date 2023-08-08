@@ -1,0 +1,17 @@
+{
+  "name": "smart-tracking",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:leandroasilva/ms-smart-tracking.git",
+  "author": "Leandro A Silva <halk_lenson@hotmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
